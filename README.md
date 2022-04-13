@@ -1,0 +1,1 @@
+Estas son practicas que he hecho mediante el lenguage C desde el telefono con el obtegivo de extender mi conocimiento y lógica de algoritmo y pregamación y estar preparado en el tema.
