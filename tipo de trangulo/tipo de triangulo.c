@@ -17,13 +17,13 @@ int main(){
   scanf("%d",&l3);
   
   //Verificando el tipo de lado
-  if(l1 == l2 && l2 == l3){
+  if((l1 == l2) && (l2 == l3)){
     //Triangulo Equiratero
     printf("\nEl triangulo es Equiratero\n");
-  }else if(((l1 == l2) != l3) || ((l2 == l3) != l1)){
+  }else if((l1 == l2) || (l2 == l3) || (l3 == l1)){
     //Triangulo Isósceles
     printf("\nEl triangulo es Isoseles\n");
-  }else if(l1 != l2 && l2 != l3){
+  }else if((l1 != l2) && (l2 != l3) && l3 != l1){
     //Triangulo Escaleno
     printf("\nEl triangulo es Escaleno\n");
   }
