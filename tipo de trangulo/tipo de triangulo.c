@@ -7,13 +7,13 @@ int main(){
   
   //Pidiendo los lados al usuario
   //Lado 1
-  printf("Ingrese el lado 1 de triangulo: ");
+  printf("Ingrese el lado 1 del triangulo: ");
   scanf("%d",&l1);
   //Lado 2
-  printf("Ingrese el lado 2 de triangulo: ");
+  printf("Ingrese el lado 2 del triangulo: ");
   scanf("%d",&l2);
-  //Lado l3
-  printf("Ingrese el lado 3 de triangulo: ");
+  //Lado 3
+  printf("Ingrese el lado 3 del triangulo: ");
   scanf("%d",&l3);
   
   //Verificando el tipo de lado
@@ -23,7 +23,7 @@ int main(){
   }else if((l1 == l2) || (l2 == l3) || (l3 == l1)){
     //Triangulo Isósceles
     printf("\nEl triangulo es Isoseles\n");
-  }else if((l1 != l2) && (l2 != l3) && l3 != l1){
+  }else if((l1 != l2) && (l2 != l3) && (l3 != l1)){
     //Triangulo Escaleno
     printf("\nEl triangulo es Escaleno\n");
   }
