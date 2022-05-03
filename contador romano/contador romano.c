@@ -5,8 +5,11 @@
 int main(){
   int n,i,unidad,decena,centena,millar,i_romano;
   
-  printf("Ingrese la cantidad de elementos a contar: ");
-  scanf("%i",&n);
+  do{ //Para evitar que el usuario ingrese numeros negativo o 0.
+    fflush(stdin);
+    printf("Ingrese la cantidad de elementos a contar: ");
+    scanf("%i",&n);
+  }while(n <= 0);
   
     
     for(i = 1; i <= n; i++){ //Contando los numeros romanos
@@ -64,7 +67,7 @@ int main(){
           case 5: printf("V"); break;
           case 6: printf("VI"); break;
           case 7: printf("VII"); break;
-          case 8: printf("VII"); break;
+          case 8: printf("VIII"); break;
           case 9: printf("IX"); break;
       }
     }
