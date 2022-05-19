@@ -2,14 +2,14 @@ Este es un pack de practicas hechos mediante el lenguage C desde el telefono con
 
 
 
-Apps usadas para la practica:
+**Apps usadas para la practica:**
 
-• Acode: Para la edicion de los archivos
+- Acode: Para la edicion de los archivos
 
 Enlace de la pagina de la app para descargarla:
 https://acode.foxdebug.com/
 
-• Termux: Para la compilacion de los archivos y visualizacion de los resultados
+- Termux: Para la compilacion de los archivos y visualizacion de los resultados
 
 Enlace de la pagina de la app para descargarla:
 https://termux.com/
