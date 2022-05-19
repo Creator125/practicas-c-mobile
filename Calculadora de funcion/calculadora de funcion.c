@@ -12,7 +12,7 @@ float main(){ //Funcion principal
   printf("Ingrese tu operacion:\n");
   /*En esta el usuario debe ingesar el numero,
   luego el operador y otro numero al final*/
-  scanf("%i %c %i",&n1,&operador,&n2);
+  scanf("%f %c %f",&n1,&operador,&n2);
   
   if((operador == '+') || (operador == '-') || (operador == '*') || (operador == '/')){
     calcular(n1,n2);
