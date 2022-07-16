@@ -42,30 +42,35 @@ void convertirCaracter(char vectorcaracter[5]) //Funcion para convertir los cara
 
 void opcion(int opcion){ //Opcion para elegir una opcion
   printf("Elige una opcion: \n");
-  printf("1.Convertir de entero a caracter\n");
-  printf("2.Convertir de caracter a entero\n");
+  printf("[1].Convertir de entero a caracter\n");
+  printf("[2].Convertir de caracter a entero\n");
   scanf("%i",&opcion);
 }
 
 int main() //Funcion pricipal
 {
-  int numeros[5],n;
+  int n,numeros[5];
   char caracteres[5];
   
   opcion(n);
   
-  switch(n){
-    case 1:
+  if (n == 1){
+    cargarNumero(numeros);
+    
     printf("Tu Numeros son: \n");
+    
     convertirEntero(caracteres);
+    
     printf("\n");
-    break;
-    case 2:
+  }else if (n == 2){
+    cargarCaracter(caracteres);
+    
     printf("Tu caracteres son: \n");
+    
     convertirCaracter(numeros);
+    
     printf("\n");
-    break;
-    default:
+  }else{
     printf("No elegiste la opcion correcta\n");
   }
   
