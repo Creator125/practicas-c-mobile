@@ -51,6 +51,7 @@ int main() //Funcion pricipal
   printf("Elige una opcion: \n");
   printf("[1].Convertir de entero a caracter\n");
   printf("[2].Convertir de caracter a entero\n");
+  printf("[3].Salir\n");
   scanf("%i",&opcion);
   
   if (opcion == 1){
@@ -69,6 +70,8 @@ int main() //Funcion pricipal
     convertirEntero(caracteres);
     
     printf("\n");
+  }else if(opcion == 3){
+    printf("Gracias\n");
   }else{
     printf("No elegiste la opcion correcta\n");
   }
