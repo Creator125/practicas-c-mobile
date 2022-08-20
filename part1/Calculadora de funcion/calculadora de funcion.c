@@ -9,27 +9,23 @@ int main(){ //Funcion principal
   printf("Ingrese tu operacion:\n");
   /*En esta el usuario debe ingesar el numero,
   luego el operador y otro numero al final*/
-  scanf("%f %c %f",&n1,&operador,&n2);
+  scanf("%i",&n1);
+  scanf(" %c",&operador);
+  scanf("%i",&n2)
   
-  if((operador == '+') || (operador == '-') || (operador == '*') || (operador == '/')){
-    calcular(n1,operador,n2);
+  if(operador == '+'){
+    suma(n1,n2);
+  }else if (operador == '-'){
+    resta(n1,n2);
+  }else if (operador == '-'){
+    multiplica(n1,n2);
+  }else if (operador == '-'){
+    dividir(n1,n2);
   }else{
     printf("Error\n");
   }
   
   return 0;
-}
-
-void calcular(int a,char o, int b){ //Esta funcion verificará el operador
-  if (o == '+'){
-    suma(a,b);
-  }else if (o == '-'){
-    resta(a,b);
-  }else if (o == '*'){
-    multiplica(a,b);
-  }else if (o == '/'){
-    dividir(a,b);
-  }
 }
 
 
@@ -38,7 +34,6 @@ void suma(int as, int bs){//Funcion sumar
   
   printf("%i\n",c);
 }
-
 
 void resta(int ar, int br){//Funcion restar
   int c = ar - br;
