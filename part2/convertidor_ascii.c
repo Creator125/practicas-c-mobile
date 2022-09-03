@@ -5,7 +5,7 @@
 
 void cagarEntero(int entero){
   printf("\nIngrese un Numero: ");
-  scanf(" %i",&entero);
+  scanf("%i",&entero);
 }
 
 
@@ -18,14 +18,14 @@ void cagarCaracter(char caracter){
 void caracterAentero(char caracter){
   int entero = (int) caracter;
   
-  printf("El equivalente numerico es: %i",entero);
+  printf("El equivalente numerico es: %i \n",entero);
 }
 
 
 void enteroAcaracter(int entero){
   char caracter = (char) entero;
   
-  printf("El equivalente alfanumerico es: %c",caracter);
+  printf("El equivalente alfanumerico es: %c \n",caracter);
 }
 
 
@@ -37,8 +37,8 @@ int main(){
   do{
     fflush(stdin);
     printf("Elige una opcion: \n");
-    printf("[1].Convertir de caracter a entero\n");
-    printf("[2].Convertir de entero a caracter\n");
+    printf("[1].Convertir de entero a caracter\n");
+    printf("[2].Convertir de caracter a entero\n");
     printf("[3].Salir\n");
     scanf("%i",&opcion);
     
@@ -63,6 +63,7 @@ int main(){
     
   }while(opcion_final == 's');
   printf(DESPEDIDA);
+  printf("\n");
   
   return 0;
 }
